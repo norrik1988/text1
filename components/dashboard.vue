@@ -1,10 +1,10 @@
 <template>
     <div class="container grid">
 
-        <div class="col-3"><card-two class="text-center p-3 mt-8 ml-4 border-round-sm"/></div>
-        <div class="col-3"><card-two class="text-center p-3 mt-8 ml-4 border-round-sm"/></div>
-        <div class="col-3"><card-two class="text-center p-3 mt-8 ml-4 border-round-sm"/></div>
-        <div class="col-2"><card-two class="text-center p-3 mt-8 ml-4 border-round-sm"/></div>
+        <div class="col-3"><card-two class="text-center p-3 mt-7 ml-4 border-round-sm"/></div>
+        <div class="col-3"><card-two class="text-center p-3 mt-7 ml-4 border-round-sm"/></div>
+        <div class="col-3"><card-two class="text-center p-3 mt-7 ml-4 border-round-sm"/></div>
+        <div class="col-2"><card-two class="text-center p-3 mt-7 ml-4 border-round-sm"/></div>
         
 
         <div class="col-9"><card-two class="text-center p-3 mt-1 ml-4 border-round-sm card-four h-22rem" /></div>
