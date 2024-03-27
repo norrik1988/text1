@@ -1,6 +1,4 @@
 <template>
-    <div class="container grid">
-      <sidebar class="col-2"/>
       
       <div class="main">
             <div class="col-3 cardStyle" >
@@ -13,19 +11,10 @@
               <card-one></card-one>
             </div>
           </div>
-      </div>
   </template>
   
-  <script>
-  import Sidebar from '~/components/sidebar.vue'; 
+ 
   
-  export default {
-    components: {
-      Sidebar 
-    },
-
-  }
-  </script>
   
   <style scoped>
  
@@ -37,7 +26,8 @@
     display: flex;
     align-items: center;
     position:absolute;
-    left: 14%;
+    left: 18%;
+    top: 22%;
     flex-direction: row;
     overflow: hidden;
   }

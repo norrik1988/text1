@@ -1,29 +1,15 @@
-<template>
-    <div class="grid">
-      <Sidebar class="col-2" /> 
+<template>  
       <div class="container">
-            <div class="main"> 
-
-
-                <div class="col-3">
-                  <card-two class="cardStyle"></card-two>
-                </div>
-                <div class="col-3">
-                  <card-two class="cardStyle"></card-two>
-                </div>
-                <div class="col-3">
-                  <card-two class="cardStyle"></card-two>
-                </div>
-
-            </div>
+        <div class="box">
+          <div class="col-3"><card-two class="text-center p-3 mt-8 ml-4 border-round-sm"/></div>
+        </div>
+      
       </div>
-    </div>
-
-                                       
-
+      
+      <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">     
   </template>
   
-  <script>
+  <!-- <script>
   import Sidebar from '~/components/sidebar.vue';
   
   export default {
@@ -31,30 +17,29 @@
       Sidebar
     },
   }
-  </script>
+  </script> -->
   
   <style scoped>
   
-  
-  body {
-    margin: 0px !important
-  }
-
   .container {
     display: flex;
-    align-items:start
+    margin-left: 15%;
+    overflow: hidden;
+
   }
-  
-  .main {
-    display: flex;
-    align-items: center;
-    position:absolute;
-    left: 16%;
-    top: 25%;
-    flex-direction: row;
+    
+  .box {
+    width: 90%;
+    position: absolute;
+    top: 21%;
+    left: 45%
   }
 
-  .cardStyle {
-    margin-right: 3%;
-  }
+  
+
+  
+  
+ 
+
+  
   </style>

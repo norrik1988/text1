@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <sidebar />
+      
         
         <button 
           class="buttonPers"
@@ -15,20 +15,16 @@
   </template>
   
   <script>
-  import Sidebar from '~/components/sidebar.vue'; 
+
   
   export default {
-    components: {
-      Sidebar 
-    },
     data() {
       return {
-        isActive: false 
+        isActive: true 
       };
     }
   }
   </script>
-  
   <style scoped>
  
   .container {

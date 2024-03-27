@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <sidebar />
+    
             <div class="box1 glass">
                     <h1> sono il form di login </h1>
                     <h2> sono il sottotitolo del form di login</h2>
@@ -13,9 +13,13 @@
 </template>
 
 <style scoped>
+
+        
+
          .container {
             display: flex;
             align-items: center;
+            
          }
 
          .button {
@@ -63,6 +67,7 @@
          .box1 {   
                 position: absolute;
                 left: 50%;
+                top: 25%;
                 width: 600px;
                 padding: 1%;
          }

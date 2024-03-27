@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <sidebar />
+      
       
       <div class="main">
               <h1> sono page two </h1>
@@ -11,19 +11,17 @@
   </template>
   
   <script>
-  import Sidebar from '~/components/sidebar.vue'; 
+  
   
   export default {
-    components: {
-      Sidebar 
-    },
+
     data() {
       return {
         isActive: false 
       };
     }
   }
-  </script>
+  </script> 
   
   <style scoped>
  
@@ -37,6 +35,7 @@
     align-items: center;
     position:absolute;
     left: 45%;
+    top: 40%;
     flex-direction: column;
   }
 

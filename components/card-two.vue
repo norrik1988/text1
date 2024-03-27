@@ -1,26 +1,32 @@
 
 <template>
-    <Card class="customCard">
-        <template #title>Title card</template>
+    <Card class="customCard h-18rem">
+        <template #title><h4>Title card</h4></template>
         <template #content>
             <p class="m-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae num
+            paragraph              
             </p>
+
+            
         </template>
     </Card>
 </template>
 
-<script setup>
-</script>
+
 
 <style scoped>
 
 .customCard {
       width: 92%;  
+      overflow:hidden;
 }
 
-p {
+p, h4 {
     text-align: left;
+}
+
+h4 {
+    margin: 0 0 8px 0;
 }
 
 .simple-card {
@@ -30,6 +36,8 @@ p {
 .p-card .p-card-caption {
     text-align: left;
 }
+
+
 </style>
 
 

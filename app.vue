@@ -6,7 +6,10 @@ import { NuxtLayout } from '#build/components';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
   </head>
     <div id="app">
-      <router-view /> 
+      <NuxtLayout>
+      <NuxtPage /> 
+
+      </NuxtLayout>
     </div>
   </template>
   
@@ -23,6 +26,7 @@ import { NuxtLayout } from '#build/components';
   
   #app {
     font-family: Arial, sans-serif;
+    overflow: hidden;
   }
   
   body {

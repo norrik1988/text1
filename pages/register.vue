@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <sidebar />
+        
         <div class="box1 glass">
                 <h1> sono il form di registrazione </h1>
                 <h2> sono il sottotitolo del form del for di registrazione</h2>
@@ -62,7 +62,8 @@
 
          .box1 {   
                 position: absolute;
-                left: 50%;
+                left: 25%;
+                top: 22%;
                 width: 600px;
                 padding: 1%;
          }

@@ -21,13 +21,13 @@
     </aside>
   </template>
   
-  <script>
-  export default {
-    data() {
-      return {
-        randomLogoUrl: "https://i.imgur.com/eoeuv15.png/200x100" // URL logo
-      };
-    }
+  <script >
+   export default {
+     data() {
+       return {
+  randomLogoUrl: "https://i.imgur.com/eoeuv15.png/200x100" // URL logo
+       };
+  }
   }
   </script>
   
@@ -35,7 +35,7 @@
   .sidebar {
     background-color: #3498db; 
     color: #fff; 
-    width: 15%; 
+    width: 26cqh; 
     height: 100vh;
     position: fixed; 
   }

@@ -14,7 +14,7 @@
         <template #footer>
             <div class="flex gap-3 mt-1">
                 <Button label="Cancel" severity="secondary" outlined class="w-full"/>
-                <Button label="Save" class="w-full" />
+                <Button label="Save" class="w-full custom" />
             </div>
         </template>
     </Card>
@@ -25,6 +25,8 @@
 
 <style scoped>
 
-
+.custom {
+    margin-left: 12px;
+}
 
 </style>

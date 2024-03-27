@@ -1,24 +1,23 @@
-<template>
-    <div class="container">
 
-      <sidebar />
-      
+import 'primeicons/primeicons.css'
+
+
+<template>
+  
+        <div class="container">
           <div class="main">
               <h1> sono page one </h1>
               <Button label="Check" icon="pi pi-check" />
               
 
           </div>
-      </div>
+    </div>
   </template>
   
   <script>
-  import Sidebar from '~/components/sidebar.vue'; 
+
   
   export default {
-    components: {
-      Sidebar 
-    },
     data() {
       return {
         isActive: false 
@@ -32,6 +31,8 @@
   </script>
   
   <style scoped>
+
+
  
   .container {
     display: flex;
@@ -39,10 +40,10 @@
   }
   
   .main {
-    display: flex;
     align-items: center;
     position:absolute;
-    left: 55%;
+    left: 44%;
+    top: 40%;
     flex-direction: column;
   
   }

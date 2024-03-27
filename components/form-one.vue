@@ -1,5 +1,5 @@
 <template>
-<div class="formgrid grid" style="width: 75%">
+<div class="formgrid grid" style="width: 75%; position:absolute; top: 30%; left: 20%">
     <div class="field col-12 md:col-6">
         <label for="firstname6">Firstname</label>
         <input id="firstname6" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
