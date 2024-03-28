@@ -1,7 +1,7 @@
 <template>
-  <sidebar></sidebar>
-  <top-bar></top-bar>
+  <sidebar-two></sidebar-two>
+  <!-- <top-bar></top-bar> -->
   <slot></slot>
-
+  
 </template>
 

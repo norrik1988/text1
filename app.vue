@@ -14,12 +14,6 @@ import { NuxtLayout } from '#build/components';
   </template>
   
   <script>
-  
-  
-  export default {
-   
-    }
-  
   </script>
   
   <style>
