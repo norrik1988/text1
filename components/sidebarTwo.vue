@@ -176,11 +176,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="p-5 flex flex-column flex-auto">
-                <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-                
-                </div>
-            </div>
         </div>
     </div>
 
@@ -208,4 +203,16 @@
 .sidebarName:hover {
     background-color: rgba(255,255,255,0) !important; 
 }
+
+.wrapper {
+
+position:absolute;
+top: 60px;
+left: 280px;
+width: calc(100% - 280px);
+height: calc(100% - 60px);
+border: 1px solid red;
+
+}
+
 </style>

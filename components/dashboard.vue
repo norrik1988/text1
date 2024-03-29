@@ -24,7 +24,6 @@
 
 .container {
     display: flex;
-    margin-left: 15%;
     overflow: hidden;
     
 }
@@ -36,6 +35,11 @@
 
 .card-four {
     width: 97%;
+}
+
+.grid {
+    margin-right: -0.0rem !important;
+    padding-bottom: 4%;
 }
 
 </style>
