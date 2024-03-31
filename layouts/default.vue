@@ -4,8 +4,9 @@
   <div class="wrapper">
 
     <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-      <slot></slot>
-
+      <div class="dashboard-content">
+          <slot></slot>
+      </div>
     </div>
   </div>
   
@@ -15,14 +16,20 @@
 <style scoped>
     .wrapper {
 
-      position:absolute;
+      position:fixed;
       top: 60px;
       left: 280px;
-      width: calc(100% - 280px);
-      height: calc(100% - 60px);
+      right: 0; 
+      bottom: 0;
       /* border: 1px solid red; */
       padding: 1%;
+      overflow-y: auto;
 
     } 
+
+    .dashboard-content {
+      max-height: calc(100% - 60px); /* Altezza massima per il contenuto del dashboard */
+      overflow-y: auto; /* Abilita lo scroll verticale quando il contenuto supera l'altezza massima */
+}
 </style>
 

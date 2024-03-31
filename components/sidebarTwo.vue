@@ -3,9 +3,9 @@
 <div class="min-h-screen flex relative lg:static surface-ground">
         <div id="app-sidebar-1" class="surface-section h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px; background-color: #3498db !important">
             <div class="flex flex-column h-full">
-                <div class="flex align-items-center px-5 flex-shrink-0 mt-5 mb-5" style="height:60px">
+                <nuxt-link to="/" class="flex align-items-center px-5 flex-shrink-0 mt-5 mb-5" style="height:60px">
                      <img src="https://i.imgur.com/eoeuv15.png/200x100" alt="Image" height="100" /> 
-                </div>
+                </nuxt-link>
                 <div class="overflow-y-auto">
                     <ul class="list-none p-3 m-0">
                         <li>
@@ -16,10 +16,10 @@
                             </div>
                             <ul class="list-none p-0 m-0 overflow-hidden">
                                 <li>
-                                    <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple customList" >
-                                        <i class="pi pi-home mr-2"></i>
-                                        <span class="font-medium">Dashboard</span>
-                                    </a>
+                                    <nuxt-link to="/grid" class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple customList no-underline">
+                                            <i class="pi pi-home mr-2"></i>
+                                            <span class="font-medium">Dashboard</span>
+                                    </nuxt-link>
                                 </li>
                                 <li>
                                     <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple customList">
@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="min-h-screen flex flex-column relative flex-auto">
-            <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 surface-border relative lg:static" style="height:60px">
+            <div class="flex justify-content-between align-items-center px-8 surface-0 border-bottom-1 surface-border relative lg:static" style="height:60px">
                 <div class="flex">
                     <a v-ripple class="cursor-pointer block lg:hidden text-700 mr-3 mt-1 p-ripple"
                         v-styleclass="{ selector: '#app-sidebar-1', enterClass: 'hidden', enterActiveClass: 'fadeinleft', leaveToClass: 'hidden', leaveActiveClass: 'fadeoutleft', hideOnOutsideClick: true }">
@@ -148,8 +148,10 @@
                     v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'fadein', leaveToClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true }">
                     <i class="pi pi-ellipsis-v text-2xl"></i>
                 </a>
+                <InputSwitch v-model="checked" />
                 <ul class="list-none p-0 m-0 hidden lg:flex lg:align-items-center select-none lg:flex-row
                     surface-section border-1 lg:border-none surface-border right-0 top-100 z-1 shadow-2 lg:shadow-none absolute lg:static">
+
                     <li>
                         <a v-ripple class="flex p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer
                             transition-duration-150 transition-colors p-ripple">
@@ -167,11 +169,12 @@
                     <li class="border-top-1 surface-border lg:border-top-none">
                         <a v-ripple class="flex p-3 lg:px-3 lg:py-2 align-items-center hover:surface-100 font-medium border-round cursor-pointer
                             transition-duration-150 transition-colors p-ripple">
-                            <img src="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-3 lg:mr-0" style="width: 32px; height: 32px"/> 
-                            <div class="block lg:hidden">
+                            <div class="block mr-3">
                                 <div class="text-900 font-medium">Josephine Lillard</div>
-                                <span class="text-600 font-medium text-sm">Marketing Specialist</span>
+                                <span class="text-600 font-semibold text-sm">Marketing Specialist</span>
                             </div>
+                            <img src="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-3 lg:mr-0" style="width: 32px; height: 32px"/> 
+                           
                         </a>
                     </li>
                 </ul>
@@ -181,6 +184,17 @@
 
     <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css"> 
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      checked: false // Imposta il valore iniziale a false
+    };
+  },
+ 
+}
+</script>
 
 <style scoped>
 
@@ -209,10 +223,12 @@
 position:absolute;
 top: 60px;
 left: 280px;
-width: calc(100% - 280px);
-height: calc(100% - 60px);
+width: calc(100% - 15%);
+height: calc(100% - 15%);
 border: 1px solid red;
 
 }
 
+
 </style>
+

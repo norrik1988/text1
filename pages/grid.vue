@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 
-// const apiUrl = 'http://localhost:3000'
+//  const apiUrl = 'http://localhost:3000'
 // let qualcosa = ref()
 
 // const getUserQualcosa = () => {
@@ -13,7 +13,7 @@
 
 //     })
 
-//     .then  ( res => {
+//      .then  ( res => {
 //         workspace.value = res
 //     })
 //     .catch (err => console.log(err))   

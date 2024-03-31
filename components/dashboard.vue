@@ -25,7 +25,6 @@
 .container {
     display: flex;
     overflow: hidden;
-    
 }
 
 .mt-8 {
