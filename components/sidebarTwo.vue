@@ -149,6 +149,7 @@
                     <i class="pi pi-ellipsis-v text-2xl"></i>
                 </a>
                 <InputSwitch v-model="checked" />
+               
                 <ul class="list-none p-0 m-0 hidden lg:flex lg:align-items-center select-none lg:flex-row
                     surface-section border-1 lg:border-none surface-border right-0 top-100 z-1 shadow-2 lg:shadow-none absolute lg:static">
 
@@ -166,9 +167,14 @@
                             <span class="block lg:hidden font-medium">Notifications</span>
                         </a>
                     </li>
+                   <li>
+                        <Button type="button" icon="pi pi-ellipsis-v" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" class="customTwo"/>
+                        <Menu ref="menu" id="overlay_menu" :model="items" :popup="true" />
+                   </li>
+                    
                     <li class="border-top-1 surface-border lg:border-top-none">
-                        <a v-ripple class="flex p-3 lg:px-3 lg:py-2 align-items-center hover:surface-100 font-medium border-round cursor-pointer
-                            transition-duration-150 transition-colors p-ripple">
+                        <a v-ripple class="flex p-3 lg:px-3 lg:py-2 align-items-center font-medium border-round cursor-pointer
+                            transition-duration-150 transition-colors p-ripple" disabled>
                             <div class="block mr-3">
                                 <div class="text-900 font-medium">Josephine Lillard</div>
                                 <span class="text-600 font-semibold text-sm">Marketing Specialist</span>
@@ -229,6 +235,17 @@ border: 1px solid red;
 
 }
 
+.p-button:not(:disabled) {
+    background:transparent;
+    color: #475569;
+    border-color: transparent;
+}
+
+.p-button:not(:disabled):hover {
+    background:#f1f5f9;
+    color: #475569;
+    border-color: transparent;
+}
 
 </style>
 
