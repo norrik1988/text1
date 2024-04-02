@@ -7,10 +7,14 @@
             paragraph              
             </p>
 
-            
+            <!-- <template v-if="showTable1">
+                 <table1></table1>
+            </template> -->
+
         </template>
     </Card>
 </template>
+
 
 
 
