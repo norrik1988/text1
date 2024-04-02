@@ -160,7 +160,7 @@
                             <span class="block lg:hidden font-medium">Inbox</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="pr-5">
                         <a v-ripple class="flex p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer
                             transition-duration-150 transition-colors p-ripple">
                             <i class="pi pi-bell text-base lg:text-2xl mr-2 lg:mr-0" v-badge.danger></i>
@@ -172,7 +172,7 @@
                         <Menu ref="menu" id="overlay_menu" :model="items" :popup="true" />
                    </li>
                     
-                    <li class="border-top-1 surface-border lg:border-top-none">
+                    <li class="border-top-1 surface-border lg:border-top-none pr-8">
                         <a v-ripple class="flex p-3 lg:px-3 lg:py-2 align-items-center font-medium border-round cursor-pointer
                             transition-duration-150 transition-colors p-ripple" disabled>
                             <div class="block mr-3">
