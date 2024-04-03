@@ -22,7 +22,7 @@
                                     </nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxtLink to="/tabletestpage" v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple customList no-underline">
+                                    <nuxtLink to="/test22" v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple customList no-underline">
                                         <i class="pi pi-bookmark mr-2"></i>
                                         <span class="font-medium">Table</span>
                                     </nuxtLink>

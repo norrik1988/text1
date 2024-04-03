@@ -1,6 +1,19 @@
 <template>
     <div class="card">
-    
+      <div class=" flex flex-column relative flex-auto">
+            <div class="flex justify-content-between align-items-center surface-0 border-bottom-1 surface-border relative lg:static" style="height:60px">
+                <div class="flex">
+                    <a v-ripple class="cursor-pointer block lg:hidden text-700 mr-3 mt-1 p-ripple"
+                        v-styleclass="{ selector: '#app-sidebar-1', enterClass: 'hidden', enterActiveClass: 'fadeinleft', leaveToClass: 'hidden', leaveActiveClass: 'fadeoutleft', hideOnOutsideClick: true }">
+                        <i class="pi pi-bars text-4xl"></i>
+                    </a>
+                    <span class="p-input-icon-left">
+                        <i class="pi pi-search customSearch"></i>
+                        <InputText type="text" class="border-solid w-10rem sm:w-20rem pl-5" placeholder="Search" />
+                    </span>
+                </div>
+            </div>
+        </div>
       <DataTable :value="products" tableStyle="min-width: 35rem">
         <Column field="name" header="Name" class="customColumn"></Column>
         <Column field="points" header="Points" class="customColumn"></Column>
@@ -14,7 +27,7 @@
             <span></span>
           </template>
           <template #body="slotProps">
-            <menu-button :item="slotProps.rowData" :items="menuItems" ></menu-button>
+            <menu-button :item="slotProps.rowData" :items="menuItems"  ></menu-button>
           </template>
         </Column>
       </DataTable>
@@ -44,10 +57,10 @@
     },
     methods: {
       editItem(item) {
-        console.log("Edit Action for", item);
+        console.log("modifica task", item);
       },
       deleteItem(item) {
-        console.log("Delete Action for", item);
+        console.log("elimina task", item);
       },
     },
   };
