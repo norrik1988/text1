@@ -3,14 +3,19 @@
       <div class=" flex flex-column relative flex-auto">
             <div class="flex justify-content-between align-items-center surface-0 border-bottom-1 surface-border relative lg:static" style="height:60px">
                 <div class="flex">
-                    <a v-ripple class="cursor-pointer block lg:hidden text-700 mr-3 mt-1 p-ripple"
+                    <!-- <a v-ripple class="cursor-pointer block lg:hidden text-700 mr-3 mt-1 p-ripple"
                         v-styleclass="{ selector: '#app-sidebar-1', enterClass: 'hidden', enterActiveClass: 'fadeinleft', leaveToClass: 'hidden', leaveActiveClass: 'fadeoutleft', hideOnOutsideClick: true }">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">
                         <i class="pi pi-search customSearch"></i>
                         <InputText type="text" class="border-solid w-10rem sm:w-20rem pl-5" placeholder="Search" />
-                    </span>
+                    </span> -->
+
+
+                    <i class="pi pi-search customSearch"></i>                       
+                    <AutoComplete v-model="selectedTask" :suggestions="filteredTasks" field="name" @complete="searchTasks" placeholder="search" />
+                                   
                 </div>
             </div>
         </div>
@@ -35,10 +40,12 @@
   </template>
   
   <script>
-   import menuButton from "@/components/menuButton.vue"
+    import menuButton from "@/components/menuButton.vue";
+    import AutoComplete from 'primevue/autocomplete';
   
   export default {
     components: {
+      AutoComplete,
       menuButton,
     },
     data() {
@@ -53,7 +60,15 @@
           { label: "Edit", icon: "pi pi-pencil", command: this.editItem },
           { label: "Delete", icon: "pi pi-trash", command: this.deleteItem },
         ],
+        searchText:'',
+        selectedTask: null,
       };
+    },
+
+    computed: {
+      filteredTasks() {
+        return this.products.filter(task => task.name.toLowerCase().includes(this.searchText.toLowerCase()));
+      }
     },
     methods: {
       editItem(item) {
@@ -62,8 +77,13 @@
       deleteItem(item) {
         console.log("elimina task", item);
       },
+      searchTasks(event) {
+
+      }
     },
   };
+
+ 
   </script>
   
   <style>
@@ -74,6 +94,17 @@
         .p-datatable .p-column-header-content {
             display: block;
             align-items: center;
+}
+
+        .p-inputtext {
+            padding-left: 14% !important;
+        }
+
+.customSearch {
+    z-index: 90;
+    position: absolute;
+    top: 36%;
+    left: 1%
 }
   </style>
   

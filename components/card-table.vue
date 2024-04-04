@@ -45,14 +45,7 @@ p {
 
 .p-card .p-card-body {
     padding: 0rem !important;
-    gap: 1rem !important;
-}
-
-.customSearch {
-    z-index: 90;
-    position: absolute;
-    top: 35%;
-    left: 1%
+    gap: 0rem !important;
 }
 
 .p-inputtext:enabled:focus {
